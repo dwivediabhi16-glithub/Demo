@@ -28,6 +28,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan Complete
+        working-directory: ./azurerm_resource_group
         run: terraform plan
         
       
